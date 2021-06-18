@@ -1,4 +1,4 @@
-# flutterwhatsapp
+# Instagram Clone using Flutter
 
 A new Flutter project.
 
