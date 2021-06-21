@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutterinstagram/pages/insta_home.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'Instagram',
       debugShowCheckedModeBanner: false,
-      theme: new ThemeData(
+      theme: ThemeData(
           primarySwatch: Colors.blue,
           primaryColor: Colors.black,
           buttonColor: Colors.black,
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           primaryTextTheme: TextTheme(
               bodyText1: TextStyle(color: Colors.black, fontFamily: "Aveny")),
           textTheme: TextTheme(bodyText1: TextStyle(color: Colors.black))),
-      home: new InstaHome(),
+      home: InstaHome(),
     );
   }
 }

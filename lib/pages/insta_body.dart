@@ -4,10 +4,10 @@ import 'package:flutterinstagram/pages/insta_list.dart';
 class InstaBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Column(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
-        // Expanded(flex: 1, child: new InstaStories()),
+        // Expanded(flex: 1, child: InstaStories()),
         Flexible(child: InstaList())
       ],
     );

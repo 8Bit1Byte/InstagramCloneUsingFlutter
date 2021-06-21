@@ -16,8 +16,8 @@ class _InstaListState extends State<InstaList> {
     return ListView.builder(
       itemCount: 5,
       itemBuilder: (context, index) => index == 0
-          ? new SizedBox(
-              child: new InstaStories(),
+          ? SizedBox(
+              child: InstaStories(),
               height: deviceSize.height * 0.15,
             )
           : Column(
@@ -32,27 +32,27 @@ class _InstaListState extends State<InstaList> {
                     children: <Widget>[
                       Row(
                         children: <Widget>[
-                          new Container(
+                          Container(
                             height: 40.0,
                             width: 40.0,
-                            decoration: new BoxDecoration(
+                            decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              image: new DecorationImage(
+                              image: DecorationImage(
                                   fit: BoxFit.fill,
-                                  image: new NetworkImage(
+                                  image: NetworkImage(
                                       "https://images.generated.photos/D402AvUc4oSwQfPcQytvxgiij1XTnvxjbXPuhgF-xbI/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAyMDUyMjEuanBn.jpg")),
                             ),
                           ),
-                          new SizedBox(
+                          SizedBox(
                             width: 10.0,
                           ),
-                          new Text(
+                          Text(
                             "iamdavid",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           )
                         ],
                       ),
-                      new IconButton(
+                      IconButton(
                         icon: Icon(Icons.more_vert),
                         onPressed: null,
                       )
@@ -61,7 +61,7 @@ class _InstaListState extends State<InstaList> {
                 ),
                 Flexible(
                   fit: FlexFit.loose,
-                  child: new Image.network(
+                  child: Image.network(
                     "https://images.generated.photos/LN51Wl-ym67szXgJFpiLrToLnk3g-37T0xZzwsfLogk/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAwOTIzMzMuanBn.jpg",
                     fit: BoxFit.cover,
                   ),
@@ -71,11 +71,11 @@ class _InstaListState extends State<InstaList> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      new Row(
+                      Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          new IconButton(
-                            icon: new Icon(isPressed
+                          IconButton(
+                            icon: Icon(isPressed
                                 ? Icons.favorite
                                 : FontAwesomeIcons.heart),
                             color: isPressed ? Colors.red : Colors.black,
@@ -85,19 +85,19 @@ class _InstaListState extends State<InstaList> {
                               });
                             },
                           ),
-                          new SizedBox(
+                          SizedBox(
                             width: 16.0,
                           ),
-                          new Icon(
+                          Icon(
                             FontAwesomeIcons.comment,
                           ),
-                          new SizedBox(
+                          SizedBox(
                             width: 16.0,
                           ),
-                          new Icon(FontAwesomeIcons.paperPlane),
+                          Icon(FontAwesomeIcons.paperPlane),
                         ],
                       ),
-                      new Icon(FontAwesomeIcons.bookmark)
+                      Icon(FontAwesomeIcons.bookmark)
                     ],
                   ),
                 ),
@@ -113,23 +113,23 @@ class _InstaListState extends State<InstaList> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
-                      new Container(
+                      Container(
                         height: 40.0,
                         width: 40.0,
-                        decoration: new BoxDecoration(
+                        decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          image: new DecorationImage(
+                          image: DecorationImage(
                               fit: BoxFit.fill,
-                              image: new NetworkImage(
+                              image: NetworkImage(
                                   "https://images.generated.photos/Hd4j-mcm29-F-5QFBJjKfmVIMy2ImV_DbFkGxViSBzM/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAyMDAxOTcuanBn.jpg")),
                         ),
                       ),
-                      new SizedBox(
+                      SizedBox(
                         width: 10.0,
                       ),
                       Expanded(
-                        child: new TextField(
-                          decoration: new InputDecoration(
+                        child: TextField(
+                          decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText: "Add a comment...",
                           ),
